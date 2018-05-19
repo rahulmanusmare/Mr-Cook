@@ -1,0 +1,116 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "mr cook",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SuggestNewFoodItemIntent",
+                    "slots": [],
+                    "samples": [
+                        "what should i eat today",
+                        "suggest me something to eat"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "Answer"
+                        }
+                    ],
+                    "samples": [
+                        "{Answer}"
+                    ]
+                },
+                {
+                    "name": "SpecificFoodIntent",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "Category_Of_Food"
+                        }
+                    ],
+                    "samples": [
+                        "something from {category}",
+                        "{category}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Answer",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "no"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Category_Of_Food",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "japan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "snack"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chaat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "italy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "soup"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "china"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "north india"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "south india"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
